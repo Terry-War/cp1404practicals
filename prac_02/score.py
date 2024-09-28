@@ -1,22 +1,6 @@
 """
-CP1404 - Practical 2 - debugging
-Broken program to determine score status
+CP1404 - Practical 2 - refactoring program to determine score status
 """
-
-
-# original code
-# score = float(input("Enter score: "))
-# if score < 0:
-#     print("Invalid score")
-# else:
-#     if score > 100:
-#         print("Invalid score")
-#     if score > 50:
-#         print("Passable")
-#     if score > 90:
-#     print("Excellent")
-# if score < 50:
-#     print("Bad")
 
 def main():
     score = float(input("Enter score: "))
