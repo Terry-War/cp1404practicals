@@ -9,7 +9,7 @@
 # and you can use the append method to add a number
 # to a list.
 #
-# suggested solution / expected results
+# expected results
 #    Number: 5
 #    Number: 20
 #    Number: 1
@@ -35,3 +35,26 @@ print(f"The smallest number is {min(numbers)}")
 print(f"The largest number is {max(numbers)}")
 print(f"The average of the numbers is {sum(numbers) / len(numbers)}")
 
+# 2. Security checker
+# Woefully inadequate security checker
+# Please use the same file, list_exercises.py
+#
+# Copy the following list of usernames:
+#    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye',
+#    'swei45', 'BaseInterpreterInterface', 'BaseStdIn', 'Command', 'ExecState',
+#    'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
+# Ask the user for their username. If the username is in the above list of authorised users,
+# print "Access granted", otherwise print "Access denied".
+
+usernames = [
+    'jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye',
+    'swei45', 'BaseInterpreterInterface', 'BaseStdIn',
+    'Command', 'ExecState', 'InteractiveConsole',
+    'InterpreterInterface', 'StartServer', 'bob']
+
+user_input = input("Enter your username: ")
+
+if user_input in usernames:
+    print("Access granted")
+else:
+    print("Access denied")
