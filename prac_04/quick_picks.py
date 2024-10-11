@@ -46,11 +46,3 @@ def main():
 
 
 main()
-
-# Type the URL of your GitHub practicals repository in the text box when you submit your practical.
-# lists_warmup.py
-# total_income.py
-# subject_reader.py
-# list_exercises.py
-# list_comprehensions.py
-# quick_picks.py
