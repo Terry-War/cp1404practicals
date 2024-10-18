@@ -12,10 +12,15 @@ STATES = {"QLD": "Queensland",
           "VIC": "Victoria",
           "TAS": "Tasmania"}
 
+print("State Names, hit enter to show all states")
 state_code = input("Enter short state: ").upper()
 while state_code != "":
-    if state_code in STATES:
-        print(state_code, "is", STATES[state_code])
-    else:
+    try:
+        print(f"{state_code} is {STATES[state_code]}")
+    except KeyError:
         print("Invalid short state")
     state_code = input("Enter short state: ").upper()
+
+# Print all states and their names neatly lined up
+for state_code, state_name in STATES.items():
+    print(f"{state_code:3} is {state_name}")
