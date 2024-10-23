@@ -16,5 +16,5 @@ while colour_name != "":
     try:
         print(f"The code for \"{colour_name}\" is {COLOUR_CODES.get(colour_name)}")
     except KeyError:
-        print("Invalid short state")
+        print("Invalid choice")
     colour_name = input("Enter a colour name: ").lower()
