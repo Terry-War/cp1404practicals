@@ -2,6 +2,7 @@
 estimated time : 30 minutes
 Started at: 9:00
 finished at: 9:25
+total time: 25 minutes
 """
 
 

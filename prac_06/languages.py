@@ -2,6 +2,7 @@
 estimated time : 15 minutes
 Started at: 9:30
 finished at: 9:45
+total time: 15 minutes
 """
 from prac_06.programming_language import ProgrammingLanguage
 
