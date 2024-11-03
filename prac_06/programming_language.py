@@ -10,7 +10,7 @@ class ProgrammingLanguage:
     """Shows information about a programming language."""
 
     def __init__(self, name, typing, reflection, year):
-        """"""
+        """initialise instance for programing language nomenclature"""
         self.name = name
         self.typing = typing
         self.reflection = reflection
