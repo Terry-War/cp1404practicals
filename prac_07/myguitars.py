@@ -1,10 +1,8 @@
 """CP1404 Prac 07 - My Guitars
-Estimated time:
-Start time:
-Finish time:
-Total time:
-
-
+Estimated time: 45 minutes
+Start at: 18:50
+Finish at: 19:50
+Total time: 60 minutes
 """
 
 import csv
