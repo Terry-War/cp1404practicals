@@ -1,10 +1,10 @@
 """
 CP1404 Practical - walkthrough example
 Programming Language class with tests.
-Estimated time: 30 minutes
-Start at:
-Finish at:
-Total time: __ minutes
+Estimated time: 60 minutes
+Start at: 18:00
+Finish at: 18:50
+Total time: 50 minutes
 """
 
 
@@ -19,6 +19,11 @@ class ProgrammingLanguage:
         self.pointer_arithmetic = pointer_arithmetic
         self.year = year
 
+    def __str__(self):
+        """Return string representation of a ProgrammingLanguage."""
+        return f"{self.name}, {self.typing} Typing, Reflection={self.reflection}, " \
+               f"Pointer Arithmetic={self.pointer_arithmetic}, First appeared in {self.year}"
+
     def __repr__(self):
         """Return string representation of a ProgrammingLanguage."""
         return f"{self.name}, {self.typing} Typing, Reflection={self.reflection},Pointer Arithmetic={self.pointer_arithmetic}, First appeared in {self.year}"
@@ -28,21 +33,21 @@ class ProgrammingLanguage:
         return self.typing == "Dynamic"
 
 
-def run_tests():
-    """Run simple tests/demos on ProgrammingLanguage class."""
-    ruby = ProgrammingLanguage("Ruby", "Dynamic", True, False ,1995)
-    python = ProgrammingLanguage("Python", "Dynamic", True,False,1991)
-    visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, False,1991)
-    powershell = ProgrammingLanguage("PowerShell", "Dynamic", True, False,2006)
-    # added PowerShell as the additional langauge for step 1.
-    languages = [ruby, python, visual_basic, powershell]
-    print(python)
+# def run_tests():
+#     """Run simple tests/demos on ProgrammingLanguage class."""
+#     ruby = ProgrammingLanguage("Ruby", "Dynamic", True, False ,1995)
+#     python = ProgrammingLanguage("Python", "Dynamic", True,False,1991)
+#     visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, False,1991)
+#     powershell = ProgrammingLanguage("PowerShell", "Dynamic", True, False,2006)
+#     # added PowerShell as the additional langauge for step 1.
+#     languages = [ruby, python, visual_basic, powershell]
+#     print(python)
+#
+#     print("The dynamically typed languages are:")
+#     for language in languages:
+#         if language.is_dynamic():
+#             print(language.name)
+#
 
-    print("The dynamically typed languages are:")
-    for language in languages:
-        if language.is_dynamic():
-            print(language.name)
-
-
-if __name__ == "__main__":
-    run_tests()
+# if __name__ == "__main__":
+#     run_tests()
