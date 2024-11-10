@@ -1,7 +1,7 @@
 """CP1404 Prac 07 - guitar
 Estimated time: 45 minutes
 Start at: 18:50
-Finish at: 17:50
+Finish at: 19:50
 Total time: 60 minutes
 Pinched alot of the code from the walkthrough example to make this work as intended, pretty happy with how it turned out.
 Also had to remember how to use open() file method to save data, haven't used it for a while.
