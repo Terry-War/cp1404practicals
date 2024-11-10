@@ -6,6 +6,7 @@ Total time: 50 minutes
 I give up....
 I don't know how to get this to run or what I'm missing
 """
+
 import datetime
 from project import Project
 
@@ -62,52 +63,56 @@ def load_projects(filename):
         reader = projects(in_file)
         next(reader)  # Skip the header row
         for row in in_file:
-            name, Start Date, Priority, Cost Estimate, Completion Percentage = row
-            projects = Project(Start Date, Priority, Cost Estimate, Completion Percentage)
-    return projects
-
-
-def save_projects(projects, filename):
-    """Saves the list of Project objects to a file."""
-    with open(filename, 'w') as output_file:
-        for project in projects:
-            output_file.write(f"{project.name}, start: {project.start_date.strftime('%d/%m/%Y')}, "
-                              f"priority: {project.priority}, estimate: ${project.cost_estimate:.2f}, "
-                              f"completion: {project.percent_complete}%\n")
-    return projects
-
-
-def display_projects(projects):
-    """Displays all projects, sorted by their completion status and priority."""
-    incomplete_projects = []
-    completed_projects = []
-
-    for project in projects:
-        if project.is_completed():
-            completed_projects.append(project)
-        else:
-            incomplete_projects.append(project)
-
-def sort_by_start_date(project):
-    """Function to sort projects by their start date."""
-    return project.start_date
-
-
-def add_new_project(projects):
-    """Adds a new project to the list of projects."""
-    print("Let's add a new project")
-    name = input("Name: ")
-    start_date = input("Start date (dd/mm/yy): ")
-    priority = input("Priority: ")
-    cost_estimate = input("Cost estimate: $")
-    percent_complete = input("Percent complete: ")
-    new_project = Project(name, start_date, priority, cost_estimate, percent_complete)
-    projects.append(new_project)
-    return new_project
-
-def update_project(projects):
-    """Updates the list of projects."""
+            name, Start
+            Date, Priority, Cost
+            Estimate, Completion
+            Percentage = row
+            projects = Project(Start
+            Date, Priority, Cost
+            Estimate, Completion
+            Percentage)
         return projects
+
+    def save_projects(projects, filename):
+        """Saves the list of Project objects to a file."""
+        with open(filename, 'w') as output_file:
+            for project in projects:
+                output_file.write(f"{project.name}, start: {project.start_date.strftime('%d/%m/%Y')}, "
+                                  f"priority: {project.priority}, estimate: ${project.cost_estimate:.2f}, "
+                                  f"completion: {project.percent_complete}%\n")
+        return projects
+
+    def display_projects(projects):
+        """Displays all projects, sorted by their completion status and priority."""
+        incomplete_projects = []
+        completed_projects = []
+
+        for project in projects:
+            if project.is_completed():
+                completed_projects.append(project)
+            else:
+                incomplete_projects.append(project)
+
+    def sort_by_start_date(project):
+        """Function to sort projects by their start date."""
+        return project.start_date
+
+    def add_new_project(projects):
+        """Adds a new project to the list of projects."""
+        print("Let's add a new project")
+        name = input("Name: ")
+        start_date = input("Start date (dd/mm/yy): ")
+        priority = input("Priority: ")
+        cost_estimate = input("Cost estimate: $")
+        percent_complete = input("Percent complete: ")
+        new_project = Project(name, start_date, priority, cost_estimate, percent_complete)
+        projects.append(new_project)
+        return new_project
+
+    def update_project(projects):
+        """Updates the list of projects."""
+        return projects
+
 
 if __name__ == '__main__':
     main()

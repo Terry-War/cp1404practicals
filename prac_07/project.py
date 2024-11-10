@@ -9,7 +9,7 @@ import datetime
 
 
 class Project:
-    """"""
+    """Class for project info"""
 
     def __init__(self, name, start_date, priority, cost_estimate, percent_complete):
         """Initializes a Project object with the given attributes."""
