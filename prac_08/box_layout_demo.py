@@ -1,5 +1,5 @@
 """CP1404 Programming 2 - prac 8 walkthrough
-Estimated: 20
+Estimated: 20 minutes
 Start: 13:30
 Finish: 13:45
 Total: 15 minutes
